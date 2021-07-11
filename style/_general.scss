@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  // font-size: 62.5%;
+  // font-family: "Cairo", sans-serif;
+  font-size: 1.2rem;
+  direction: rtl;
+}
+
+.website-title {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  font-family: "Times New Roman", Times, serif;
+
+  h1 {
+    font-size: 50px;
+  }
+}
+
+/* Style the top navigation bar */
+.top-navigation {
+  overflow: hidden;
+  background-color: #333;
+
+  /* Style the top navigation links */
+  a {
+    float: right;
+    display: block;
+    color: #eee4e4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    /* Change color on hover */
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
+}
+
+/* Body */
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-size: 0.9rem;
+
+  // links behavior
+  li {
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+
+      &:link {
+        color: rgb(211, 65, 236);
+      }
+
+      &:visited {
+        color: rgba(121, 121, 113, 0.623);
+      }
+
+      &:hover {
+        background-color: rgb(131, 28, 28);
+        color: rgb(233, 233, 233);
+      }
+    }
+  }
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  font-size: 0.5rem;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .top-navigation a {
+    float: none;
+    width: 100%;
+  }
+}
