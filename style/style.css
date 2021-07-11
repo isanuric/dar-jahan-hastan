@@ -138,6 +138,23 @@ body {
   }
 }
 
+.body-test {
+  background-color: black;
+}
+
+.body-test .image-top {
+  background-image: url("../pic/lenanoritsina-3ZpgiwZT1QM-unsplash.jpeg");
+  height: 50rem;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  text-shadow: -1px 1px 2px #e2dddd;
+  font-size: 0.7rem;
+  color: white;
+  padding-top: 40rem;
+}
+
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,37 +179,42 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #c3c0c0;
+  background-color: #242222;
+  color: #242222;
   text-decoration: none;
-  color: black;
   margin: 10px;
-  padding: 20px;
+  padding: 5px;
   min-width: 300px;
   max-width: 300px;
-  min-height: 300px;
-  max-height: 300px;
-}
-
-.flex-row a img {
-  width: 100%;
-  min-width: 200px;
-  max-width: 200px;
-  max-height: 200px;
-  min-height: 200px;
-  border-radius: 8px;
-  border: 4px solid #ddd;
+  min-height: 500px;
 }
 
 .flex-row a:hover {
-  background-color: #6d6969;
+  background-color: #b6aeae;
+  color: #161515;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
+.flex-row a p {
+  font-size: 0.7rem;
+}
+
+.flex-row a img {
+  width: 100%;
+  min-width: 230px;
+  max-width: 230px;
+  max-height: 230px;
+  min-height: 230px;
+  border-radius: 8px;
+  border: 4px solid #ddd;
+  margin-bottom: 5px;
+}
+
 box {
-  background: #e2e0df;
+  background: #131212;
   padding: 2px;
   min-width: 300px;
   max-width: 300px;
@@ -201,11 +223,13 @@ box {
   margin: 10px;
 }
 
-box:hover {
-  background-color: #a18d8d;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .body-test .image-top {
+    font-size: 0.5rem;
+    max-height: 30rem;
+    padding-top: 25rem;
+    margin-bottom: 15rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
