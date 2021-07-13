@@ -3,8 +3,6 @@
 }
 
 html {
-  // font-size: 62.5%;
-  // font-family: "Cairo", sans-serif;
   font-size: 1.2rem;
   direction: rtl;
 }
@@ -12,8 +10,9 @@ html {
 .website-title {
   padding: 30px;
   text-align: center;
-  background: white;
-  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(2, 14, 19);
+  color: #eee4e4;
+  margin-bottom: 1px;
 
   h1 {
     font-size: 50px;
@@ -23,7 +22,8 @@ html {
 /* Style the top navigation bar */
 .top-navigation {
   overflow: hidden;
-  background-color: #333;
+  // background-color: #333;
+  background-color: rgb(2, 14, 19);
 
   /* Style the top navigation links */
   a {
@@ -87,9 +87,8 @@ body {
   }
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
+.img-background {
+  background-color: rgb(2, 14, 19);
   width: 100%;
   height: auto;
   padding: 20px;
@@ -121,6 +120,8 @@ body {
   background: #ddd;
   margin-top: 20px;
   font-size: 0.5rem;
+  background-color: rgb(2, 14, 19);
+  color: #eee4e4;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
