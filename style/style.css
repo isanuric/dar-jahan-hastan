@@ -112,6 +112,15 @@ body {
   clear: both;
 }
 
+.center-text {
+  text-align: center;
+  margin: 1rem 1rem;
+}
+
+.center-text big {
+  margin: 8rem 8rem;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
@@ -198,7 +207,7 @@ body {
 }
 
 .flex-row a:hover {
-  background-color: #9d9db3;
+  background-color: #9c9ca1;
   color: #161515;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
